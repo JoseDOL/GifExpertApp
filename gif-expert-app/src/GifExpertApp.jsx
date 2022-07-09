@@ -1,7 +1,6 @@
 // zSJoHEX6YctsGwsW8G4wqFXVDIp6W9BH api 
 import {React, useState} from 'react';
-import { AddCategory } from './components/AddCategory';
-import { GifGrid } from './components/GifGrid';
+import { AddCategory, GifGrid } from './components';
 
 export const GifExpertApp = () => {
     const [ categories, setCategories ]= useState(['One Punch'])
