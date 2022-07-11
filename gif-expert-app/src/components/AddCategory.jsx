@@ -11,12 +11,13 @@ const onSubmit = (event) =>{
    event.preventDefault();
    if(inputValue.trim().length <= 1) return;
   // setCategories ( categories =>[ inputValue, ...categories]);
-  onNewCategory (inputValue.trim()); 
+  
   setInputValue('');
+  onNewCategory (inputValue.trim()); 
    //console.log(inputValue);
 }
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} aria-label="form" >
         <input
             type="text"
             placeholder = "Buscar gifs"
